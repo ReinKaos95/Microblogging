@@ -17,6 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php require_once 'layout/header.php'; ?>
+
+<?php include_once 'Layout/navbar.php'; ?>
+
     <h1>Registro</h1>
     <form method="POST">
         <label for="username">Usuario:</label>
@@ -31,5 +34,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Registrar</button>
     </form>
     <a href="/login">¿Ya tienes cuenta? Inicia sesión</a>
-</body>
-</html>
